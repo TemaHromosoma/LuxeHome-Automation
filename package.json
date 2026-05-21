@@ -1,0 +1,37 @@
+{
+  "name": "luxehome-automation",
+  "version": "1.0.0",
+  "description": "Playwright UI/Accessibility & Grafana k6 with Lighthouse Audits",
+  "type": "module",
+  "main": "framework-1-user.js",
+  "scripts": {
+    "test:playwright": "npx playwright test",
+    "test:1user": "k6 run k6/framework-1-user.js",
+    "test:10users": "k6 run k6/framework-10-users.js",
+    "test:100users": "k6 run k6/framework-100-users.js",
+    "test:combined": "k6 run k6/framework-combined.js",
+    "lighthouse": "node k6/lighthouse-check.js",
+    "test:all": "npm run lighthouse && npm run test:combined"
+  },
+  "keywords": [
+    "playwright",
+    "k6",
+    "load-testing",
+    "performance",
+    "lighthouse",
+    "audit",
+    "accessibility"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "lighthouse": "^11.4.0",
+    "chrome-launcher": "^1.1.2"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.1",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.6.0",
+    "axe-core": "^4.11.1"
+  }
+}
