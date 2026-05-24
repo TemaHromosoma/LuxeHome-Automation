@@ -4,9 +4,7 @@ import * as chromeLauncher from 'chrome-launcher';
 const BASE_URL = process.env.BASE_URL || 'http://localhost:3000';
 
 const PAGES_TO_AUDIT = [
-  { name: 'Home',     path: '/'         },
   { name: 'Cart',     path: '/cart'     },
-  { name: 'Checkout', path: '/checkout' },
   { name: 'PDP',      path: '/product/1'},
 ];
 

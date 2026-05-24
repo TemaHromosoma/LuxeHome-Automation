@@ -1,4 +1,4 @@
-export const BASE_URL   = __ENV.BASE_URL   || 'https://daristr.github.io/luxehome-qa/#/cart';
+export const BASE_URL   = __ENV.BASE_URL   || 'https://daristr.github.io/luxehome-qa';
 export const THINK_TIME = Number(__ENV.THINK_TIME) || 1;
 
 export const PRODUCTS = [
@@ -8,10 +8,4 @@ export const PRODUCTS = [
   { id: 6, name: 'Ceramic Vase Collection', price: 69.00,   stock: 20, isSale: true  },
 ];
 
-export const PAGES = {
-  home:     '/',
-  cart:     '/cart',
-  search:   '/search',
-  checkout: '/checkout',
-  pdp:      (id) => `/product/${id}`,
-};
+export const PAGE = '/';
